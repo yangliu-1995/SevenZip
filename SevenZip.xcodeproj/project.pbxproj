@@ -29,8 +29,6 @@
 		A990631C2B65DF1C0013B342 /* ZipOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E611C00FD0F006BDF06 /* ZipOut.cpp */; };
 		A990631D2B65DF1C0013B342 /* ZipRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E631C00FD0F006BDF06 /* ZipRegister.cpp */; };
 		A990631E2B65DF1C0013B342 /* ZipUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E641C00FD0F006BDF06 /* ZipUpdate.cpp */; };
-		A99063202B65E02A0013B342 /* tst3.zip in Resources */ = {isa = PBXBuildFile; fileRef = A990631F2B65E02A0013B342 /* tst3.zip */; };
-		A99063222B65E4600013B342 /* tst.tar in Resources */ = {isa = PBXBuildFile; fileRef = A99063212B65E4600013B342 /* tst.tar */; };
 		A99063232B65E4AF0013B342 /* TarHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E341C00FD0F006BDF06 /* TarHandler.cpp */; };
 		A99063242B65E4AF0013B342 /* TarHandlerOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E361C00FD0F006BDF06 /* TarHandlerOut.cpp */; };
 		A99063252B65E4AF0013B342 /* TarHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E371C00FD0F006BDF06 /* TarHeader.cpp */; };
@@ -76,7 +74,6 @@
 		A990634D2B65EA7E0013B342 /* MslzHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E191C00FD0F006BDF06 /* MslzHandler.cpp */; };
 		A990634E2B65EA7E0013B342 /* MubHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E1A1C00FD0F006BDF06 /* MubHandler.cpp */; };
 		A990634F2B65EAB70013B342 /* MyXml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA31B01C00FD10006BDF06 /* MyXml.cpp */; };
-		A99063512B65EB0A0013B342 /* tst.rar in Resources */ = {isa = PBXBuildFile; fileRef = A99063502B65EB0A0013B342 /* tst.rar */; };
 		E820839D1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E820839C1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E820839E1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E820839C1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E82083A11C0E564C00E42B7C /* SVZBridgedOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = E820839F1C0E564C00E42B7C /* SVZBridgedOutputStream.h */; };
@@ -582,9 +579,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A990631F2B65E02A0013B342 /* tst3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = tst3.zip; sourceTree = "<group>"; };
-		A99063212B65E4600013B342 /* tst.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = tst.tar; sourceTree = "<group>"; };
-		A99063502B65EB0A0013B342 /* tst.rar */ = {isa = PBXFileReference; lastKnownFileType = file; path = tst.rar; sourceTree = "<group>"; };
 		E820839C1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVZArchiveEntryAttribute.h; sourceTree = "<group>"; };
 		E820839F1C0E564C00E42B7C /* SVZBridgedOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVZBridgedOutputStream.h; sourceTree = "<group>"; };
 		E82083A01C0E564C00E42B7C /* SVZBridgedOutputStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SVZBridgedOutputStream.mm; sourceTree = "<group>"; };
@@ -2930,9 +2924,6 @@
 			children = (
 				E8BA35C11C027D6B006BDF06 /* AppDelegate.h */,
 				E8BA35C21C027D6B006BDF06 /* AppDelegate.m */,
-				A99063212B65E4600013B342 /* tst.tar */,
-				A990631F2B65E02A0013B342 /* tst3.zip */,
-				A99063502B65EB0A0013B342 /* tst.rar */,
 				E8BA35C41C027D6B006BDF06 /* ViewController.h */,
 				E8BA35C51C027D6B006BDF06 /* ViewController.m */,
 				E8BA35C71C027D6B006BDF06 /* Main.storyboard */,
@@ -3220,12 +3211,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99063222B65E4600013B342 /* tst.tar in Resources */,
 				E8BA35CE1C027D6B006BDF06 /* LaunchScreen.storyboard in Resources */,
 				E8BA35CB1C027D6B006BDF06 /* Assets.xcassets in Resources */,
-				A99063512B65EB0A0013B342 /* tst.rar in Resources */,
 				E8BA35C91C027D6B006BDF06 /* Main.storyboard in Resources */,
-				A99063202B65E02A0013B342 /* tst3.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
