@@ -1,0 +1,4 @@
+rm -rf build
+xcodebuild -project SevenZip.xcodeproj -scheme "SevenZip (iOS)" -configuration Release -arch arm64 -sdk "iphoneos" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CONFIGURATION_BUILD_DIR="build/Release-iphoneos"
+xcodebuild -project SevenZip.xcodeproj -scheme "SevenZip (iOS)" -configuration Release -arch arm64 -arch x86_64 -sdk "iphonesimulator" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES CONFIGURATION_BUILD_DIR="build/Release-iphonesimulator"
+xcodebuild -create-xcframework -framework build/Release-iphoneos/SevenZip.framework -framework build/Release-iphonesimulator/SevenZip.framework -output build/xcframeworks/SevenZip.xcframework
