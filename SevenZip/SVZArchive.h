@@ -50,23 +50,9 @@ typedef NS_ENUM(NSUInteger, SVZArchiveFormat) {
 
     kSVZArchiveFormatZip = 0,
 
-    kSVZArchiveFormatBZip2,
-
-    kSVZArchiveFormatRar,
-
     kSVZArchiveFormat7z,
 
-    kSVZArchiveFormatCab,
-
-    kSVZArchiveFormatLzma,
-
-    kSVZArchiveFormatLzma86,
-
-    kSVZArchiveFormatIso,
-
     kSVZArchiveFormatTar,
-
-    kSVZArchiveFormatGzip
 
 };
 

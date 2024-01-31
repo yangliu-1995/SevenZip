@@ -34,32 +34,12 @@ NSString* const kSVZArchiveErrorDomain = @"SVZArchiveErrorDomain";
 // {23170F69-40C1-278A-1000-000110010000}
 DEFINE_GUID(CLSIDFormatZip, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0x01, 0x00, 0x00);
 
-// {23170F69-40C1-278A-1000-000110020000}
-DEFINE_GUID(CLSIDFormatBZip2, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0x02, 0x00, 0x00);
-
-// {23170F69-40C1-278A-1000-000110030000}
-DEFINE_GUID(CLSIDFormatRar, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0x03, 0x00, 0x00);
-
 // {23170F69-40C1-278A-1000-000110070000}
 DEFINE_GUID(CLSIDFormat7z, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0x07, 0x00, 0x00);
-
-// {23170F69-40C1-278A-1000-000110080000}
-DEFINE_GUID(CLSIDFormatCab, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0x08, 0x00, 0x00);
-
-// {23170F69-40C1-278A-1000-0001100A0000}
-DEFINE_GUID(CLSIDFormatLzma, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0x0A, 0x00, 0x00);
-
-// {23170F69-40C1-278A-1000-0001100B0000}
-DEFINE_GUID(CLSIDFormatLzma86, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0x0B, 0x00, 0x00);
-
-// {23170F69-40C1-278A-1000-000110E70000}
-DEFINE_GUID(CLSIDFormatIso, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0xE7, 0x00, 0x00);
 
 // {23170F69-40C1-278A-1000-000110EE0000}
 DEFINE_GUID(CLSIDFormatTar, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0xEE, 0x00, 0x00);
 
-// {23170F69-40C1-278A-1000-000110EF0000}
-DEFINE_GUID(CLSIDFormatGZip, 0x23170F69, 0x40C1, 0x278A, 0x10, 0x00, 0x00, 0x01, 0x10, 0xEF, 0x00, 0x00);
 #undef INITGUID
 
 STDAPI CreateArchiver(const GUID *clsid, const GUID *iid, void **outObject);
@@ -254,32 +234,11 @@ static void SetError(NSError** aError, SVZArchiveError aCode, NSDictionary* user
             case kSVZArchiveFormatZip:
                 clsid = &CLSIDFormatZip;
                 break;
-            case kSVZArchiveFormatBZip2:
-                clsid = &CLSIDFormatBZip2;
-                break;
-            case kSVZArchiveFormatRar:
-                clsid = &CLSIDFormatRar;
-                break;
             case kSVZArchiveFormat7z:
                 clsid = &CLSIDFormat7z;
                 break;
-            case kSVZArchiveFormatCab:
-                clsid = &CLSIDFormatCab;
-                break;
-            case kSVZArchiveFormatLzma:
-                clsid = &CLSIDFormatLzma;
-                break;
-            case kSVZArchiveFormatLzma86:
-                clsid = &CLSIDFormatLzma86;
-                break;
-            case kSVZArchiveFormatIso:
-                clsid = &CLSIDFormatIso;
-                break;
             case kSVZArchiveFormatTar:
                 clsid = &CLSIDFormatTar;
-                break;
-            case kSVZArchiveFormatGzip:
-                clsid = &CLSIDFormatGZip;
                 break;
             default:
                 NSAssert(0, @"Unknown Archive Format");
@@ -371,32 +330,11 @@ static void SetError(NSError** aError, SVZArchiveError aCode, NSDictionary* user
         case kSVZArchiveFormatZip:
             clsid = &CLSIDFormatZip;
             break;
-        case kSVZArchiveFormatBZip2:
-            clsid = &CLSIDFormatBZip2;
-            break;
-        case kSVZArchiveFormatRar:
-            clsid = &CLSIDFormatRar;
-            break;
         case kSVZArchiveFormat7z:
             clsid = &CLSIDFormat7z;
             break;
-        case kSVZArchiveFormatCab:
-            clsid = &CLSIDFormatCab;
-            break;
-        case kSVZArchiveFormatLzma:
-            clsid = &CLSIDFormatLzma;
-            break;
-        case kSVZArchiveFormatLzma86:
-            clsid = &CLSIDFormatLzma86;
-            break;
-        case kSVZArchiveFormatIso:
-            clsid = &CLSIDFormatIso;
-            break;
         case kSVZArchiveFormatTar:
             clsid = &CLSIDFormatTar;
-            break;
-        case kSVZArchiveFormatGzip:
-            clsid = &CLSIDFormatGZip;
             break;
         default:
             NSAssert(0, @"Unknown Archive Format");
