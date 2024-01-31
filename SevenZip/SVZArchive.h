@@ -28,14 +28,14 @@ typedef NS_ENUM(NSInteger, SVZArchiveError) {
 typedef NS_ENUM(NSUInteger, SVZCompressionLevel) {
     /// no compression, copy only
     kSVZCompressionLevelNone = 0,
-    
+
     //  (Method, Dictionary, FastBytes, MatchFinder, Filter)
     /// LZMA2, 64 KB, 32, HC4, BCJ
     kSVZCompressionLevelLowest,
-    
+
     /// LZMA2, 1 MB, 32, HC4, BCJ
     kSVZCompressionLevelLow,
-    
+
     /// LZMA2, 16 MB, 32, BT4, BCJ
     kSVZCompressionLevelNormal,
 
@@ -46,8 +46,32 @@ typedef NS_ENUM(NSUInteger, SVZCompressionLevel) {
     kSVZCompressionLevelHighest
 };
 
+typedef NS_ENUM(NSUInteger, SVZArchiveFormat) {
+
+    kSVZArchiveFormatZip = 0,
+
+    kSVZArchiveFormatBZip2,
+
+    kSVZArchiveFormatRar,
+
+    kSVZArchiveFormat7z,
+
+    kSVZArchiveFormatCab,
+
+    kSVZArchiveFormatLzma,
+
+    kSVZArchiveFormatLzma86,
+
+    kSVZArchiveFormatIso,
+
+    kSVZArchiveFormatTar,
+
+    kSVZArchiveFormatGzip
+
+};
+
 /**
- * Class representing a 7-zip archive file.
+ * Class representing a archive file.
  */
 @interface SVZArchive : NSObject
 
@@ -60,9 +84,9 @@ typedef NS_ENUM(NSUInteger, SVZCompressionLevel) {
 /**
  * Opens a 7-zip archive with the given URL.
  *
- * If the file specified by the URL already exists, it is assumed to be a 7-zip archive 
+ * If the file specified by the URL already exists, it is assumed to be a 7-zip archive
  * and is subsequently opened.
- * If there is no file at the given URL, a new archive object is created in memory 
+ * If there is no file at the given URL, a new archive object is created in memory
  * if the `aShouldCreate` flag is set.
  *
  * @param aURL The location of the 7-zip archive to be created at/read from.
@@ -76,19 +100,58 @@ typedef NS_ENUM(NSUInteger, SVZCompressionLevel) {
                                       error:(NSError**)aError;
 
 /**
+ * Opens an archive with the given URL.
+ *
+ * If the file specified by the URL already exists, it is assumed to be a 7-zip archive
+ * and is subsequently opened.
+ * If there is no file at the given URL, a new archive object is created in memory
+ * if the `aShouldCreate` flag is set.
+ *
+ * @param aURL The location of the 7-zip archive to be created at/read from.
+ * @param aFormat The format of archive, default is 7z.
+ * @param aShouldCreate If set, a new archive is created when `aURL` doesn't point to an existing entry.
+ * @param aError Error information in case of failure. May be NULL.
+ *
+ * @return An initialized archive object, or nil in case of any failure.
+ */
++ (SVZ_NULLABLE instancetype)archiveWithURL:(NSURL*)aURL
+                              archiveFormat:(SVZArchiveFormat)aFormat
+                            createIfMissing:(BOOL)aShouldCreate
+                                      error:(NSError**)aError;
+
+/**
  * Opens a 7-zip archive with the given URL.
  *
  * This method can only be used to open existing archives. To create a new archive,
  * use `archiveWithURL:createIfMissing:error:`.
  *
  * @param aURL The location of the 7-zip archive to be created at/read from.
- * @param aPassword The password to use for opening the archive (typically when 
+ * @param aPassword The password to use for opening the archive (typically when
  *                  header encryption is enabled). May be nil.
  * @param aError Error information in case of failure. May be NULL.
  *
  * @return An initialized archive object, or nil in case of any failure.
  */
 + (SVZ_NULLABLE instancetype)archiveWithURL:(NSURL*)aURL
+                                   password:(NSString* SVZ_NULLABLE_PTR)aPassword
+                                      error:(NSError**)aError;
+
+/**
+ * Opens a 7-zip archive with the given URL.
+ *
+ * This method can only be used to open existing archives. To create a new archive,
+ * use `archiveWithURL:createIfMissing:error:`.
+ *
+ * @param aURL The location of the 7-zip archive to be created at/read from.
+ * @param aFormat The format of archive, default is 7z.
+ * @param aPassword The password to use for opening the archive (typically when
+ *                  header encryption is enabled). May be nil.
+ * @param aError Error information in case of failure. May be NULL.
+ *
+ * @return An initialized archive object, or nil in case of any failure.
+ */
++ (SVZ_NULLABLE instancetype)archiveWithURL:(NSURL*)aURL
+                              archiveFormat:(SVZArchiveFormat)aFormat
                                    password:(NSString* SVZ_NULLABLE_PTR)aPassword
                                       error:(NSError**)aError;
 
@@ -121,7 +184,7 @@ typedef NS_ENUM(NSUInteger, SVZCompressionLevel) {
  * which uses different passwords for each of its contained entries. This method only applies
  * the provided password for encrypting newly added entries. If you are updating
  * an archive that already contained some files, those entries will not be re-encrypted
- * with the new password. If you still needed that behavior, you'd have to manually extract 
+ * with the new password. If you still needed that behavior, you'd have to manually extract
  * and re-add existing entries.
  *
  * WARNING: Setting header encryption with password X for an existing archive whose
@@ -135,7 +198,7 @@ typedef NS_ENUM(NSUInteger, SVZCompressionLevel) {
  *              If set to NO, only the newly added archive entries will be encrypted,
  *              which means extracting these entries will require the password given in `aPassword`.
  *              If set to YES, both the newly added entries AND the archive header will be encrypted,
- *              which means both listing the archive contents and extracting these entries will require 
+ *              which means both listing the archive contents and extracting these entries will require
  *              the password given in `aPassword`.
  *              If `aPassword` is empty, this flag is ignored and header encryption (if any) is removed.
  * @param aCompressionLevel Compression level to use

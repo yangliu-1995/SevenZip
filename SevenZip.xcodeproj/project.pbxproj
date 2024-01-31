@@ -21,6 +21,62 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A99063172B65DF1C0013B342 /* ZipAddCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E561C00FD0F006BDF06 /* ZipAddCommon.cpp */; };
+		A99063182B65DF1C0013B342 /* ZipHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E591C00FD0F006BDF06 /* ZipHandler.cpp */; };
+		A99063192B65DF1C0013B342 /* ZipHandlerOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E5B1C00FD0F006BDF06 /* ZipHandlerOut.cpp */; };
+		A990631A2B65DF1C0013B342 /* ZipIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E5D1C00FD0F006BDF06 /* ZipIn.cpp */; };
+		A990631B2B65DF1C0013B342 /* ZipItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E5F1C00FD0F006BDF06 /* ZipItem.cpp */; };
+		A990631C2B65DF1C0013B342 /* ZipOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E611C00FD0F006BDF06 /* ZipOut.cpp */; };
+		A990631D2B65DF1C0013B342 /* ZipRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E631C00FD0F006BDF06 /* ZipRegister.cpp */; };
+		A990631E2B65DF1C0013B342 /* ZipUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E641C00FD0F006BDF06 /* ZipUpdate.cpp */; };
+		A99063202B65E02A0013B342 /* tst3.zip in Resources */ = {isa = PBXBuildFile; fileRef = A990631F2B65E02A0013B342 /* tst3.zip */; };
+		A99063222B65E4600013B342 /* tst.tar in Resources */ = {isa = PBXBuildFile; fileRef = A99063212B65E4600013B342 /* tst.tar */; };
+		A99063232B65E4AF0013B342 /* TarHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E341C00FD0F006BDF06 /* TarHandler.cpp */; };
+		A99063242B65E4AF0013B342 /* TarHandlerOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E361C00FD0F006BDF06 /* TarHandlerOut.cpp */; };
+		A99063252B65E4AF0013B342 /* TarHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E371C00FD0F006BDF06 /* TarHeader.cpp */; };
+		A99063262B65E4AF0013B342 /* TarIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E391C00FD0F006BDF06 /* TarIn.cpp */; };
+		A99063272B65E4AF0013B342 /* TarOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E3C1C00FD0F006BDF06 /* TarOut.cpp */; };
+		A99063282B65E4AF0013B342 /* TarRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E3E1C00FD0F006BDF06 /* TarRegister.cpp */; };
+		A99063292B65E4AF0013B342 /* TarUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E3F1C00FD0F006BDF06 /* TarUpdate.cpp */; };
+		A990632A2B65E9170013B342 /* CabBlockInStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DD41C00FD0F006BDF06 /* CabBlockInStream.cpp */; };
+		A990632B2B65E9170013B342 /* CabHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DD61C00FD0F006BDF06 /* CabHandler.cpp */; };
+		A990632C2B65E9170013B342 /* CabHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DD81C00FD0F006BDF06 /* CabHeader.cpp */; };
+		A990632D2B65E9170013B342 /* CabIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DDA1C00FD0F006BDF06 /* CabIn.cpp */; };
+		A990632E2B65E9170013B342 /* CabRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DDD1C00FD0F006BDF06 /* CabRegister.cpp */; };
+		A990632F2B65E92C0013B342 /* Rar5Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E281C00FD0F006BDF06 /* Rar5Handler.cpp */; };
+		A99063302B65E92C0013B342 /* RarHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E2A1C00FD0F006BDF06 /* RarHandler.cpp */; };
+		A99063312B65E99A0013B342 /* ApmHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DCE1C00FD0F006BDF06 /* ApmHandler.cpp */; };
+		A99063322B65E99A0013B342 /* ArHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DD01C00FD0F006BDF06 /* ArHandler.cpp */; };
+		A99063332B65E99A0013B342 /* ArjHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DD11C00FD0F006BDF06 /* ArjHandler.cpp */; };
+		A99063342B65E99A0013B342 /* Bz2Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DD21C00FD0F006BDF06 /* Bz2Handler.cpp */; };
+		A99063352B65E9EB0013B342 /* PropVariantUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA31FD1C00FD10006BDF06 /* PropVariantUtils.cpp */; };
+		A99063362B65EA040013B342 /* ChmHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DDF1C00FD0F006BDF06 /* ChmHandler.cpp */; };
+		A99063372B65EA040013B342 /* ChmIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DE11C00FD0F006BDF06 /* ChmIn.cpp */; };
+		A99063382B65EA2C0013B342 /* IsoHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E0D1C00FD0F006BDF06 /* IsoHandler.cpp */; };
+		A99063392B65EA2C0013B342 /* IsoHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E0F1C00FD0F006BDF06 /* IsoHeader.cpp */; };
+		A990633A2B65EA2C0013B342 /* IsoIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E111C00FD0F006BDF06 /* IsoIn.cpp */; };
+		A990633B2B65EA2C0013B342 /* IsoRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E141C00FD0F006BDF06 /* IsoRegister.cpp */; };
+		A990633C2B65EA7E0013B342 /* ComHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DE31C00FD0F006BDF06 /* ComHandler.cpp */; };
+		A990633D2B65EA7E0013B342 /* CpioHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DFB1C00FD0F006BDF06 /* CpioHandler.cpp */; };
+		A990633E2B65EA7E0013B342 /* CramfsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DFC1C00FD0F006BDF06 /* CramfsHandler.cpp */; };
+		A990633F2B65EA7E0013B342 /* DeflateProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2DFD1C00FD0F006BDF06 /* DeflateProps.cpp */; };
+		A99063402B65EA7E0013B342 /* DmgHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E001C00FD0F006BDF06 /* DmgHandler.cpp */; };
+		A99063412B65EA7E0013B342 /* ElfHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E011C00FD0F006BDF06 /* ElfHandler.cpp */; };
+		A99063422B65EA7E0013B342 /* ExtHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E021C00FD0F006BDF06 /* ExtHandler.cpp */; };
+		A99063432B65EA7E0013B342 /* FatHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E031C00FD0F006BDF06 /* FatHandler.cpp */; };
+		A99063442B65EA7E0013B342 /* FlvHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E041C00FD0F006BDF06 /* FlvHandler.cpp */; };
+		A99063452B65EA7E0013B342 /* GptHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E051C00FD0F006BDF06 /* GptHandler.cpp */; };
+		A99063462B65EA7E0013B342 /* GzHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E061C00FD0F006BDF06 /* GzHandler.cpp */; };
+		A99063472B65EA7E0013B342 /* HfsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E091C00FD0F006BDF06 /* HfsHandler.cpp */; };
+		A99063482B65EA7E0013B342 /* IhexHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E0B1C00FD0F006BDF06 /* IhexHandler.cpp */; };
+		A99063492B65EA7E0013B342 /* LzhHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E151C00FD0F006BDF06 /* LzhHandler.cpp */; };
+		A990634A2B65EA7E0013B342 /* LzmaHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E161C00FD0F006BDF06 /* LzmaHandler.cpp */; };
+		A990634B2B65EA7E0013B342 /* MachoHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E171C00FD0F006BDF06 /* MachoHandler.cpp */; };
+		A990634C2B65EA7E0013B342 /* MbrHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E181C00FD0F006BDF06 /* MbrHandler.cpp */; };
+		A990634D2B65EA7E0013B342 /* MslzHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E191C00FD0F006BDF06 /* MslzHandler.cpp */; };
+		A990634E2B65EA7E0013B342 /* MubHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2E1A1C00FD0F006BDF06 /* MubHandler.cpp */; };
+		A990634F2B65EAB70013B342 /* MyXml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8BA31B01C00FD10006BDF06 /* MyXml.cpp */; };
+		A99063512B65EB0A0013B342 /* tst.rar in Resources */ = {isa = PBXBuildFile; fileRef = A99063502B65EB0A0013B342 /* tst.rar */; };
 		E820839D1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E820839C1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E820839E1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E820839C1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E82083A11C0E564C00E42B7C /* SVZBridgedOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = E820839F1C0E564C00E42B7C /* SVZBridgedOutputStream.h */; };
@@ -441,8 +497,6 @@
 		E8BA35C91C027D6B006BDF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BA35C71C027D6B006BDF06 /* Main.storyboard */; };
 		E8BA35CB1C027D6B006BDF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BA35CA1C027D6B006BDF06 /* Assets.xcassets */; };
 		E8BA35CE1C027D6B006BDF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BA35CC1C027D6B006BDF06 /* LaunchScreen.storyboard */; };
-		E8E17CF31D3C226A00051F7D /* demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E17CF21D3C226A00051F7D /* demo.swift */; };
-		E8E17CF41D3C2AF100051F7D /* demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E17CF21D3C226A00051F7D /* demo.swift */; };
 		E8F424AE1C03C386004F7D5F /* SevenZip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BA35B61C0266EE006BDF06 /* SevenZip.framework */; };
 		E8F424B11C07BF14004F7D5F /* SVZBridgedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F424AF1C07BF14004F7D5F /* SVZBridgedInputStream.h */; };
 		E8F424B21C07BF14004F7D5F /* SVZBridgedInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F424AF1C07BF14004F7D5F /* SVZBridgedInputStream.h */; };
@@ -528,6 +582,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A990631F2B65E02A0013B342 /* tst3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = tst3.zip; sourceTree = "<group>"; };
+		A99063212B65E4600013B342 /* tst.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = tst.tar; sourceTree = "<group>"; };
+		A99063502B65EB0A0013B342 /* tst.rar */ = {isa = PBXFileReference; lastKnownFileType = file; path = tst.rar; sourceTree = "<group>"; };
 		E820839C1C0E472D00E42B7C /* SVZArchiveEntryAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVZArchiveEntryAttribute.h; sourceTree = "<group>"; };
 		E820839F1C0E564C00E42B7C /* SVZBridgedOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVZBridgedOutputStream.h; sourceTree = "<group>"; };
 		E82083A01C0E564C00E42B7C /* SVZBridgedOutputStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SVZBridgedOutputStream.mm; sourceTree = "<group>"; };
@@ -1461,7 +1518,6 @@
 		E8BA35CA1C027D6B006BDF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8BA35CD1C027D6B006BDF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8BA35CF1C027D6B006BDF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8E17CF21D3C226A00051F7D /* demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demo.swift; sourceTree = "<group>"; };
 		E8F424AF1C07BF14004F7D5F /* SVZBridgedInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVZBridgedInputStream.h; sourceTree = "<group>"; };
 		E8F424B01C07BF14004F7D5F /* SVZBridgedInputStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SVZBridgedInputStream.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2865,7 +2921,6 @@
 			isa = PBXGroup;
 			children = (
 				E8BA34F11C01C38A006BDF06 /* main.m */,
-				E8E17CF21D3C226A00051F7D /* demo.swift */,
 			);
 			path = SVZDemo;
 			sourceTree = "<group>";
@@ -2875,6 +2930,9 @@
 			children = (
 				E8BA35C11C027D6B006BDF06 /* AppDelegate.h */,
 				E8BA35C21C027D6B006BDF06 /* AppDelegate.m */,
+				A99063212B65E4600013B342 /* tst.tar */,
+				A990631F2B65E02A0013B342 /* tst3.zip */,
+				A99063502B65EB0A0013B342 /* tst.rar */,
 				E8BA35C41C027D6B006BDF06 /* ViewController.h */,
 				E8BA35C51C027D6B006BDF06 /* ViewController.m */,
 				E8BA35C71C027D6B006BDF06 /* Main.storyboard */,
@@ -3099,6 +3157,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -3161,9 +3220,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99063222B65E4600013B342 /* tst.tar in Resources */,
 				E8BA35CE1C027D6B006BDF06 /* LaunchScreen.storyboard in Resources */,
 				E8BA35CB1C027D6B006BDF06 /* Assets.xcassets in Resources */,
+				A99063512B65EB0A0013B342 /* tst.rar in Resources */,
 				E8BA35C91C027D6B006BDF06 /* Main.storyboard in Resources */,
+				A99063202B65E02A0013B342 /* tst3.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3425,7 +3487,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8E17CF31D3C226A00051F7D /* demo.swift in Sources */,
 				E8BA34F21C01C38A006BDF06 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3434,6 +3495,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A990634F2B65EAB70013B342 /* MyXml.cpp in Sources */,
+				A990633C2B65EA7E0013B342 /* ComHandler.cpp in Sources */,
+				A990633D2B65EA7E0013B342 /* CpioHandler.cpp in Sources */,
+				A990633E2B65EA7E0013B342 /* CramfsHandler.cpp in Sources */,
+				A990633F2B65EA7E0013B342 /* DeflateProps.cpp in Sources */,
+				A99063402B65EA7E0013B342 /* DmgHandler.cpp in Sources */,
+				A99063412B65EA7E0013B342 /* ElfHandler.cpp in Sources */,
+				A99063422B65EA7E0013B342 /* ExtHandler.cpp in Sources */,
+				A99063432B65EA7E0013B342 /* FatHandler.cpp in Sources */,
+				A99063442B65EA7E0013B342 /* FlvHandler.cpp in Sources */,
+				A99063452B65EA7E0013B342 /* GptHandler.cpp in Sources */,
+				A99063462B65EA7E0013B342 /* GzHandler.cpp in Sources */,
+				A99063472B65EA7E0013B342 /* HfsHandler.cpp in Sources */,
+				A99063482B65EA7E0013B342 /* IhexHandler.cpp in Sources */,
+				A99063492B65EA7E0013B342 /* LzhHandler.cpp in Sources */,
+				A990634A2B65EA7E0013B342 /* LzmaHandler.cpp in Sources */,
+				A990634B2B65EA7E0013B342 /* MachoHandler.cpp in Sources */,
+				A990634C2B65EA7E0013B342 /* MbrHandler.cpp in Sources */,
+				A990634D2B65EA7E0013B342 /* MslzHandler.cpp in Sources */,
+				A990634E2B65EA7E0013B342 /* MubHandler.cpp in Sources */,
+				A99063382B65EA2C0013B342 /* IsoHandler.cpp in Sources */,
+				A99063392B65EA2C0013B342 /* IsoHeader.cpp in Sources */,
+				A990633A2B65EA2C0013B342 /* IsoIn.cpp in Sources */,
+				A990633B2B65EA2C0013B342 /* IsoRegister.cpp in Sources */,
+				A99063362B65EA040013B342 /* ChmHandler.cpp in Sources */,
+				A99063372B65EA040013B342 /* ChmIn.cpp in Sources */,
+				A99063352B65E9EB0013B342 /* PropVariantUtils.cpp in Sources */,
+				A99063312B65E99A0013B342 /* ApmHandler.cpp in Sources */,
+				A99063322B65E99A0013B342 /* ArHandler.cpp in Sources */,
+				A99063332B65E99A0013B342 /* ArjHandler.cpp in Sources */,
+				A99063342B65E99A0013B342 /* Bz2Handler.cpp in Sources */,
+				A990632F2B65E92C0013B342 /* Rar5Handler.cpp in Sources */,
+				A99063302B65E92C0013B342 /* RarHandler.cpp in Sources */,
+				A990632A2B65E9170013B342 /* CabBlockInStream.cpp in Sources */,
+				A990632B2B65E9170013B342 /* CabHandler.cpp in Sources */,
+				A990632C2B65E9170013B342 /* CabHeader.cpp in Sources */,
+				A990632D2B65E9170013B342 /* CabIn.cpp in Sources */,
+				A990632E2B65E9170013B342 /* CabRegister.cpp in Sources */,
+				A99063232B65E4AF0013B342 /* TarHandler.cpp in Sources */,
+				A99063242B65E4AF0013B342 /* TarHandlerOut.cpp in Sources */,
+				A99063252B65E4AF0013B342 /* TarHeader.cpp in Sources */,
+				A99063262B65E4AF0013B342 /* TarIn.cpp in Sources */,
+				A99063272B65E4AF0013B342 /* TarOut.cpp in Sources */,
+				A99063282B65E4AF0013B342 /* TarRegister.cpp in Sources */,
+				A99063292B65E4AF0013B342 /* TarUpdate.cpp in Sources */,
+				A99063172B65DF1C0013B342 /* ZipAddCommon.cpp in Sources */,
+				A99063182B65DF1C0013B342 /* ZipHandler.cpp in Sources */,
+				A99063192B65DF1C0013B342 /* ZipHandlerOut.cpp in Sources */,
+				A990631A2B65DF1C0013B342 /* ZipIn.cpp in Sources */,
+				A990631B2B65DF1C0013B342 /* ZipItem.cpp in Sources */,
+				A990631C2B65DF1C0013B342 /* ZipOut.cpp in Sources */,
+				A990631D2B65DF1C0013B342 /* ZipRegister.cpp in Sources */,
+				A990631E2B65DF1C0013B342 /* ZipUpdate.cpp in Sources */,
 				E8BA35131C0266EE006BDF06 /* FileName.cpp in Sources */,
 				E8BA35141C0266EE006BDF06 /* SVZUtils.mm in Sources */,
 				E8BA35151C0266EE006BDF06 /* XzCrc64Opt.c in Sources */,
@@ -3622,7 +3736,6 @@
 			files = (
 				E8BA35C61C027D6B006BDF06 /* ViewController.m in Sources */,
 				E8BA35C31C027D6B006BDF06 /* AppDelegate.m in Sources */,
-				E8E17CF41D3C2AF100051F7D /* demo.swift in Sources */,
 				E8BA35C01C027D6B006BDF06 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3991,6 +4104,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SevenZip/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = (
 					"-DENV_MACOSX",
@@ -4032,6 +4146,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SevenZip/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = (
 					"-DENV_MACOSX",
